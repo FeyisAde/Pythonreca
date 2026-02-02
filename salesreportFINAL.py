@@ -19,7 +19,7 @@ for row in csv_file:
     else:
         totals_by_ID[customerID] = total
 
- # Write each customer once (sorted by customer ID)
+ # Write each customer once with sorted by customer ID
 for customerID in sorted(totals_by_ID):
     outfile.write(f"{customerID},{totals_by_ID[customerID]:.2f}\n")     
 
